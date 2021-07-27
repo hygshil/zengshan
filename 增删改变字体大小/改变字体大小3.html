@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<head>
+</head>
+
+<body>
+  <div id="formstylecontrols">
+    <label for="font-size">�����С</label>
+    <select id="font-size">
+      <option value="12px">С��</option>
+      <option value="14px">��С</option>
+      <option value="16px">�к�</option>
+      <option value="18px">�ϴ�</option>
+      <option value="24px">���</option>
+    </select>
+    <label for="background">������ɫ</label>
+    <select id="background">
+      <option value="#F4FBFF">Ĭ��</option>
+      <option value="#f0f0f0">����</option>
+      <option value="#eaeaea">��ɫ</option>
+      <option value="#eefaee">��ɫ</option>
+      <option value="#ffffed">����</option>
+    </select>
+    <label for="color">������ɫ</label>
+    <select id="color">
+      <option value="#000000">��ɫ</option>
+      <option value="#ff0000">��ɫ</option>
+      <option value="#006600">��ɫ</option>
+      <option value="#0000ff">��ɫ</option>
+      <option value="#660000">��ɫ</option>
+    </select>
+    <label>
+      <input type="submit" id="style" value="��������" />
+    </label>
+  </div>
+  <h2>��һ�£��乬����Թ</h2>
+  <p>���³�������������</p>
+  <p>�����ǻʵ۵Ĵ�����</p>
+  <p>
+    ��������˿�����ա������������ۿ��ʵ۵�ӭ�״�䡣��һ�죬���յ���ʵ۵�ּ�⣬���˻ʼҹ����ߵ�������ӭȢ��ͤ��ҵ�Ů������֥������ǰ��ȫ����װ����������������ׯ�ϣ����в��¹�Ů��ӵ�����Ž��ء���ˮ������������������������������һ���֡���ʮ�����ɴ���Ʒ���ҫ�ۣ��ֶӸ���ӭ�׹��֣�˿��֮�������������ӭ�׵����������˸߳���
+  </p>
+  <p>
+    �ƺƵ�����ӭ�׶��飬ת������ǵ���Ҫ�ֵ����ٰѳ�����ͷ���»ʺ����֥�͵��ʵ�ѡ���Ķ��������ϲ�Ĵ󳼡������Ѿ��׷׸����ˣ��ܿ죬�ۺ��ҪЯ�ֽ��붴�������ȴ����ˡ���
+  </p>
+  <p>
+    ��ʱ�˿̣���վ����Ƭ��ˮ��μˮ֮��Ĵ������ϣ�����������žɵľ޴��ʯ���̾͵�СС�㳡��ǰ����ɰشд�����һ����������֣��Ǿ��������谮���ҵľ������ҵ����Ĺ��ޡ�
+  </p>
+  <p>���絶�ʣ���24���������Ȼ���������ޣ������������ٵĻ�����û������ʢ������Ȼû�䡣</p>
+  <p>
+    ����һ���޴�Ļ�԰��ÿ�����ڶ���ÿ�����ڵ�������û���κ�Ů���ܹ��������ܡ�������������ڡ����������ھ͸��ֻص������˵ġ��ġ��ˡ����ҵĻ���������ȻлĻ�ˡ�
+  </p>
+  <p>18��24�꣬һ���������ᡢ��������£����ڴ��ƺ󹬳�����֬ˮ�۵�������Ϣ���û������ȴ���Ǿ��պʹ̼����������������һ��ǿ�����𣬳����ǧ���졣
+  </p>
+  <p>ֻ�ǣ��Ǹ�ʱ����û���뵽������ʵ����˶��ݡ�</p>
+
+</body>
+<script>
+  $(function () {
+    //改变字体
+    $("#font-size").change(function () {
+      $("p").css({ 'font-size': this.value });
+    })
+
+    //改变背景色
+    $('#background').click(function () {
+      $('p').css({ "background": this.value });
+    });
+    //改变颜色
+    $('#color').click(function () {
+      $('p').css({ "color": this.value });
+    });
+
+  });
+</script>
+
+</html>
